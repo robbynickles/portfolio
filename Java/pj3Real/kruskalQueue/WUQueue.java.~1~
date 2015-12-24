@@ -1,0 +1,35 @@
+   *    On completion, q is empty.
+   *  @param q the WUQueue whose contents should be appended onto this
+   *    WUQueue.
+   **/
+  public void append(WUQueue q) {
+    if (head == null) {
+      head = q.head;
+    } else {
+      tail.next = q.head;
+    }
+    if (q.head != null) {
+      tail = q.tail;
+    }
+    size = size + q.size;
+    q.head = null;
+    q.tail = null;
+    q.size = 0;
+  }
+
+  /**
+   *  toString() converts this queue to a String.
+   **/
+  public String toString() {
+    String out = "[ ";
+    try {
+      for (int i = 0; i < size(); i++) {
+	out = out + front() + " ";
+	enqueue(dequeue(),null,null);
+      }
+    } catch (QueueEmptyException uf) {
+      System.err.println("Error:  attempt to dequeue from empty queue.");
+    }
+    return out + "]";
+  }
+}

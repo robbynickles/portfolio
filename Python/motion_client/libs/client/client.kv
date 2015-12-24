@@ -1,0 +1,39 @@
+#:kivy 1.8.0
+<Client>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: '16dp'
+        cols: 1
+
+        TextInput:
+            size_hint_y: None
+            height: '48dp'
+            multiline: False
+            hint_text: 'Enter a destination IP address.'
+            on_text_validate: root.ip_entered( args[0] )
+
+        Label:
+            id: status
+            text: ''
+
+        BoxLayout:
+            size_hint_y: None
+            height: '48dp'
+            padding: '4dp'
+
+            ToggleButton:
+                id: toggle_button
+                text: 'Start Client'
+                on_press: root.do_toggle() 
+
+        GridLayout:
+            id: out_logs
+            cols: 1
+            spacing: '4dp' 
+            Label:
+                text: ''
+            Label:
+                text: ''
+            Label:
+                text: ''
+
