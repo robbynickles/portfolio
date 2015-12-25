@@ -1,4 +1,4 @@
-I have never built a large program using C. Instead I've given a set of small programs to demonstrate my proficiency in the language.
+I have never built a large program using C. Instead I've given a set of small programs that demonstrate my proficiency in the language.
 
 “erat.c” implements the Sieve of Eratosthenes, a simple algorithm to find prime numbers.
 
