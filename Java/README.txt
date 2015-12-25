@@ -1,13 +1,7 @@
-                              PJ3 GRADER
+                        
 
-Name and login of student submitting project: Robby Nickles, ik.
 
-Partner one name and login: Daniel Price, hz.
-
-Partner two name and login: Gaurang Garg, hx.         
-
-   ================================================================
-                               WUGraph  
+                           WUGraph  
 
 Our implementation of a weighted, undirected graph for the most part
 follows the diagram given in the project specs. One significant
